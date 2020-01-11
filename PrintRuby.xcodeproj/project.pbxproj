@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B693ECDB23C9B57D00B9B847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */; };
+		B693ECDD23C9B57D00B9B847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECDC23C9B57D00B9B847 /* ViewController.swift */; };
+		B693ECE023C9B57D00B9B847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B693ECDE23C9B57D00B9B847 /* Main.storyboard */; };
+		B693ECE223C9B58500B9B847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE123C9B58500B9B847 /* Assets.xcassets */; };
+		B693ECE523C9B58500B9B847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */; };
+		B693ECF023C9B58500B9B847 /* PrintRubyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECEF23C9B58500B9B847 /* PrintRubyTests.swift */; };
+		B693ECFB23C9B58500B9B847 /* PrintRubyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECFA23C9B58500B9B847 /* PrintRubyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B693ECEC23C9B58500B9B847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B693ECCF23C9B57D00B9B847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B693ECD623C9B57D00B9B847;
+			remoteInfo = PrintRuby;
+		};
+		B693ECF723C9B58500B9B847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B693ECCF23C9B57D00B9B847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B693ECD623C9B57D00B9B847;
+			remoteInfo = PrintRuby;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B693ECD723C9B57D00B9B847 /* PrintRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B693ECDC23C9B57D00B9B847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B693ECDF23C9B57D00B9B847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B693ECE123C9B58500B9B847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B693ECE423C9B58500B9B847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B693ECE623C9B58500B9B847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B693ECEB23C9B58500B9B847 /* PrintRubyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintRubyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B693ECEF23C9B58500B9B847 /* PrintRubyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintRubyTests.swift; sourceTree = "<group>"; };
+		B693ECF123C9B58500B9B847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B693ECF623C9B58500B9B847 /* PrintRubyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintRubyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B693ECFA23C9B58500B9B847 /* PrintRubyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintRubyUITests.swift; sourceTree = "<group>"; };
+		B693ECFC23C9B58500B9B847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B693ECD423C9B57D00B9B847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECE823C9B58500B9B847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECF323C9B58500B9B847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B693ECCE23C9B57D00B9B847 = {
+			isa = PBXGroup;
+			children = (
+				B693ECD923C9B57D00B9B847 /* PrintRuby */,
+				B693ECEE23C9B58500B9B847 /* PrintRubyTests */,
+				B693ECF923C9B58500B9B847 /* PrintRubyUITests */,
+				B693ECD823C9B57D00B9B847 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B693ECD823C9B57D00B9B847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B693ECD723C9B57D00B9B847 /* PrintRuby.app */,
+				B693ECEB23C9B58500B9B847 /* PrintRubyTests.xctest */,
+				B693ECF623C9B58500B9B847 /* PrintRubyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B693ECD923C9B57D00B9B847 /* PrintRuby */ = {
+			isa = PBXGroup;
+			children = (
+				B693ED0A23C9F99900B9B847 /* ViewModel */,
+				B693ED0923C9F98F00B9B847 /* ViewController */,
+				B693ED0823C9F97F00B9B847 /* View */,
+				B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */,
+				B693ECE123C9B58500B9B847 /* Assets.xcassets */,
+				B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */,
+				B693ECE623C9B58500B9B847 /* Info.plist */,
+			);
+			path = PrintRuby;
+			sourceTree = "<group>";
+		};
+		B693ECEE23C9B58500B9B847 /* PrintRubyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B693ECEF23C9B58500B9B847 /* PrintRubyTests.swift */,
+				B693ECF123C9B58500B9B847 /* Info.plist */,
+			);
+			path = PrintRubyTests;
+			sourceTree = "<group>";
+		};
+		B693ECF923C9B58500B9B847 /* PrintRubyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B693ECFA23C9B58500B9B847 /* PrintRubyUITests.swift */,
+				B693ECFC23C9B58500B9B847 /* Info.plist */,
+			);
+			path = PrintRubyUITests;
+			sourceTree = "<group>";
+		};
+		B693ED0823C9F97F00B9B847 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B693ECDE23C9B57D00B9B847 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B693ED0923C9F98F00B9B847 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B693ECDC23C9B57D00B9B847 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B693ED0A23C9F99900B9B847 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B693ECD623C9B57D00B9B847 /* PrintRuby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B693ECFF23C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRuby" */;
+			buildPhases = (
+				B693ECD323C9B57D00B9B847 /* Sources */,
+				B693ECD423C9B57D00B9B847 /* Frameworks */,
+				B693ECD523C9B57D00B9B847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrintRuby;
+			productName = PrintRuby;
+			productReference = B693ECD723C9B57D00B9B847 /* PrintRuby.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B693ECEA23C9B58500B9B847 /* PrintRubyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B693ED0223C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRubyTests" */;
+			buildPhases = (
+				B693ECE723C9B58500B9B847 /* Sources */,
+				B693ECE823C9B58500B9B847 /* Frameworks */,
+				B693ECE923C9B58500B9B847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B693ECED23C9B58500B9B847 /* PBXTargetDependency */,
+			);
+			name = PrintRubyTests;
+			productName = PrintRubyTests;
+			productReference = B693ECEB23C9B58500B9B847 /* PrintRubyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B693ECF523C9B58500B9B847 /* PrintRubyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B693ED0523C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRubyUITests" */;
+			buildPhases = (
+				B693ECF223C9B58500B9B847 /* Sources */,
+				B693ECF323C9B58500B9B847 /* Frameworks */,
+				B693ECF423C9B58500B9B847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B693ECF823C9B58500B9B847 /* PBXTargetDependency */,
+			);
+			name = PrintRubyUITests;
+			productName = PrintRubyUITests;
+			productReference = B693ECF623C9B58500B9B847 /* PrintRubyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B693ECCF23C9B57D00B9B847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = fieldin0831;
+				TargetAttributes = {
+					B693ECD623C9B57D00B9B847 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B693ECEA23C9B58500B9B847 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B693ECD623C9B57D00B9B847;
+					};
+					B693ECF523C9B58500B9B847 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B693ECD623C9B57D00B9B847;
+					};
+				};
+			};
+			buildConfigurationList = B693ECD223C9B57D00B9B847 /* Build configuration list for PBXProject "PrintRuby" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B693ECCE23C9B57D00B9B847;
+			productRefGroup = B693ECD823C9B57D00B9B847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B693ECD623C9B57D00B9B847 /* PrintRuby */,
+				B693ECEA23C9B58500B9B847 /* PrintRubyTests */,
+				B693ECF523C9B58500B9B847 /* PrintRubyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B693ECD523C9B57D00B9B847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B693ECE523C9B58500B9B847 /* LaunchScreen.storyboard in Resources */,
+				B693ECE223C9B58500B9B847 /* Assets.xcassets in Resources */,
+				B693ECE023C9B57D00B9B847 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECE923C9B58500B9B847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECF423C9B58500B9B847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B693ECD323C9B57D00B9B847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B693ECDD23C9B57D00B9B847 /* ViewController.swift in Sources */,
+				B693ECDB23C9B57D00B9B847 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECE723C9B58500B9B847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B693ECF023C9B58500B9B847 /* PrintRubyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B693ECF223C9B58500B9B847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B693ECFB23C9B58500B9B847 /* PrintRubyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B693ECED23C9B58500B9B847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B693ECD623C9B57D00B9B847 /* PrintRuby */;
+			targetProxy = B693ECEC23C9B58500B9B847 /* PBXContainerItemProxy */;
+		};
+		B693ECF823C9B58500B9B847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B693ECD623C9B57D00B9B847 /* PrintRuby */;
+			targetProxy = B693ECF723C9B58500B9B847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B693ECDE23C9B57D00B9B847 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B693ECDF23C9B57D00B9B847 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B693ECE423C9B58500B9B847 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B693ECFD23C9B58500B9B847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B693ECFE23C9B58500B9B847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B693ED0023C9B58500B9B847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRuby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pr.fieldin0831.PrintRuby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B693ED0123C9B58500B9B847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRuby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pr.fieldin0831.PrintRuby;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B693ED0323C9B58500B9B847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRubyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ptf.fieldin0831.PrintRubyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintRuby.app/PrintRuby";
+			};
+			name = Debug;
+		};
+		B693ED0423C9B58500B9B847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRubyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ptf.fieldin0831.PrintRubyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintRuby.app/PrintRuby";
+			};
+			name = Release;
+		};
+		B693ED0623C9B58500B9B847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRubyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ptf.fieldin0831.PrintRubyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrintRuby;
+			};
+			name = Debug;
+		};
+		B693ED0723C9B58500B9B847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrintRubyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ptf.fieldin0831.PrintRubyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrintRuby;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B693ECD223C9B57D00B9B847 /* Build configuration list for PBXProject "PrintRuby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B693ECFD23C9B58500B9B847 /* Debug */,
+				B693ECFE23C9B58500B9B847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B693ECFF23C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRuby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B693ED0023C9B58500B9B847 /* Debug */,
+				B693ED0123C9B58500B9B847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B693ED0223C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRubyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B693ED0323C9B58500B9B847 /* Debug */,
+				B693ED0423C9B58500B9B847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B693ED0523C9B58500B9B847 /* Build configuration list for PBXNativeTarget "PrintRubyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B693ED0623C9B58500B9B847 /* Debug */,
+				B693ED0723C9B58500B9B847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B693ECCF23C9B57D00B9B847 /* Project object */;
+}
