@@ -20,10 +20,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rln-dN-lmy">
                                 <rect key="frame" x="10" y="10" width="394" height="754"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-hI-gps" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-hI-gps" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="151"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -47,10 +46,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-VW-Vuf" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-VW-Vuf" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="191" width="394" height="505"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
@@ -65,14 +63,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-qJ-xJO" customClass="CustomButton" customModule="PrintRuby" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-qJ-xJO" customClass="CustomButton" customModule="PrintRuby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="704" width="394" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="VAj-Eq-SPl"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <state key="normal" title="Speak">
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" image="Speak">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -80,6 +78,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="touchUpInsideSpeakButton:" destination="V4z-ZV-9Wu" eventType="touchUpInside" id="pVN-Ug-ZfJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -96,11 +97,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mjs-KR-2du"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Print Ruby" id="RvT-cF-eaA"/>
+                    <navigationItem key="navigationItem" title="Print Ruby" id="RvT-cF-eaA">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Psq-8w-2VQ"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="destinationWordLabel" destination="d3I-VW-Vuf" id="lcK-Po-cfT"/>
-                        <outlet property="sourceWordTextView" destination="OuP-hI-gps" id="Siz-gR-3YK"/>
+                        <outlet property="destinationStringTextView" destination="d3I-VW-Vuf" id="1VF-ym-MN4"/>
+                        <outlet property="sourceStringTextView" destination="OuP-hI-gps" id="jIX-mK-8fB"/>
+                        <outlet property="speakButton" destination="fv0-qJ-xJO" id="TqL-1X-DOP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YM-Dz-YQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,4 +112,7 @@
             <point key="canvasLocation" x="97" y="226"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Speak" width="50" height="50"/>
+    </resources>
 </document>
