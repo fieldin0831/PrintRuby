@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 /// ルビ表示画面ViewControllerクラス
 class ShowRubyViewController: BaseViewController {
@@ -14,6 +15,7 @@ class ShowRubyViewController: BaseViewController {
     @IBOutlet weak var sourceStringTextView: CustomTextView!
     @IBOutlet weak var destinationStringTextView: CustomTextView!
     @IBOutlet weak var speakButton: CustomButton!
+    @IBOutlet weak var creditWebView: WKWebView!
     
     /// Viewモデル
     let viewModel: ShowRubyViewModel = ShowRubyViewModel()
@@ -55,6 +57,13 @@ class ShowRubyViewController: BaseViewController {
         
         // 読み上げボタン状態更新
         self.updateSpeakButtonState()
+        
+        // クレジット表示
+        creditWebView.contentMode = .scaleAspectFit
+        if let url = URL(string: "https://u.xgoo.jp/img/sgoo.png") {
+            let request = URLRequest(url: url)
+            creditWebView.load(request)
+        }
     }
     
     /// 読み上げボタン状態更新

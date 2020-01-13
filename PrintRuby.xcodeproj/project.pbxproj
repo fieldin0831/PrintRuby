@@ -11,6 +11,7 @@
 		9171C6FD9BD05DFDFD423ABB /* Pods_PrintRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7028E4F6AB2D66ADEB2CEF33 /* Pods_PrintRuby.framework */; };
 		B61A844623CCAF6F000B90E3 /* ApiGooManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A844523CCAF6F000B90E3 /* ApiGooManager.swift */; };
 		B61A844B23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A844A23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift */; };
+		B61A844D23CCD021000B90E3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61A844C23CCD021000B90E3 /* WebKit.framework */; };
 		B693ECDB23C9B57D00B9B847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */; };
 		B693ECE223C9B58500B9B847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE123C9B58500B9B847 /* Assets.xcassets */; };
 		B693ECE523C9B58500B9B847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		9BEBF994AB1ED95890DDF5E6 /* Pods-PrintRubyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintRubyTests.debug.xcconfig"; path = "Target Support Files/Pods-PrintRubyTests/Pods-PrintRubyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B61A844523CCAF6F000B90E3 /* ApiGooManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGooManager.swift; sourceTree = "<group>"; };
 		B61A844A23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGooConvertToHiragana.swift; sourceTree = "<group>"; };
+		B61A844C23CCD021000B90E3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B693ECD723C9B57D00B9B847 /* PrintRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B693ECE123C9B58500B9B847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61A844D23CCD021000B90E3 /* WebKit.framework in Frameworks */,
 				9171C6FD9BD05DFDFD423ABB /* Pods_PrintRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +270,7 @@
 		E5DDB6CC6180E886C82DEAF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B61A844C23CCD021000B90E3 /* WebKit.framework */,
 				7028E4F6AB2D66ADEB2CEF33 /* Pods_PrintRuby.framework */,
 				577D0B52E71CAD3A83FF7C0B /* Pods_PrintRuby_PrintRubyUITests.framework */,
 				92CF35D5FE8C7C093A472CBB /* Pods_PrintRubyTests.framework */,
