@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8E2A1FAF041A0A33668F9315 /* Pods_PrintRuby_PrintRubyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D0B52E71CAD3A83FF7C0B /* Pods_PrintRuby_PrintRubyUITests.framework */; };
 		9171C6FD9BD05DFDFD423ABB /* Pods_PrintRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7028E4F6AB2D66ADEB2CEF33 /* Pods_PrintRuby.framework */; };
+		B61A844623CCAF6F000B90E3 /* ApiGooManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A844523CCAF6F000B90E3 /* ApiGooManager.swift */; };
+		B61A844B23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A844A23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift */; };
 		B693ECDB23C9B57D00B9B847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */; };
 		B693ECE223C9B58500B9B847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE123C9B58500B9B847 /* Assets.xcassets */; };
 		B693ECE523C9B58500B9B847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */; };
@@ -59,6 +61,8 @@
 		8D6B00829F4AD6C90A026780 /* Pods-PrintRuby-PrintRubyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintRuby-PrintRubyUITests.release.xcconfig"; path = "Target Support Files/Pods-PrintRuby-PrintRubyUITests/Pods-PrintRuby-PrintRubyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92CF35D5FE8C7C093A472CBB /* Pods_PrintRubyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrintRubyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEBF994AB1ED95890DDF5E6 /* Pods-PrintRubyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrintRubyTests.debug.xcconfig"; path = "Target Support Files/Pods-PrintRubyTests/Pods-PrintRubyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B61A844523CCAF6F000B90E3 /* ApiGooManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiGooManager.swift; sourceTree = "<group>"; };
+		B61A844A23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGooConvertToHiragana.swift; sourceTree = "<group>"; };
 		B693ECD723C9B57D00B9B847 /* PrintRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B693ECE123C9B58500B9B847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +132,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B61A844423CCAF6F000B90E3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B61A844723CCB9DC000B90E3 /* Goo */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B61A844723CCB9DC000B90E3 /* Goo */ = {
+			isa = PBXGroup;
+			children = (
+				B61A844523CCAF6F000B90E3 /* ApiGooManager.swift */,
+				B61A844A23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift */,
+			);
+			path = Goo;
+			sourceTree = "<group>";
+		};
 		B693ECCE23C9B57D00B9B847 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +180,7 @@
 				B693ED0A23C9F99900B9B847 /* ViewModel */,
 				B693ED0923C9F98F00B9B847 /* ViewController */,
 				B693ED0823C9F97F00B9B847 /* View */,
+				B61A844423CCAF6F000B90E3 /* API */,
 				B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */,
 				B693ECE123C9B58500B9B847 /* Assets.xcassets */,
 				B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */,
@@ -519,6 +541,7 @@
 				B6B7807323CB74D30024138C /* InputStringViewModel.swift in Sources */,
 				B6B7806723CB11590024138C /* CustomButton.swift in Sources */,
 				B6B7806D23CB4C050024138C /* InputStringTableViewCell.swift in Sources */,
+				B61A844623CCAF6F000B90E3 /* ApiGooManager.swift in Sources */,
 				B6B7806123CAFAD60024138C /* CustomTextView.swift in Sources */,
 				B6B7807123CB74260024138C /* BaseViewData.swift in Sources */,
 				B6B7807523CB74FD0024138C /* ShowRubyViewModel.swift in Sources */,
@@ -526,6 +549,7 @@
 				B6B7806323CAFB900024138C /* InputStringViewController.swift in Sources */,
 				B6F3CAD923CA14C800366A8C /* R.generated.swift in Sources */,
 				B6B7807A23CC7CC20024138C /* UIButton.swift in Sources */,
+				B61A844B23CCBA14000B90E3 /* ApiGooConvertToHiragana.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

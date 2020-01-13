@@ -147,6 +147,15 @@ class InputStringViewController: BaseViewController {
                 return
             }
             
+            // エラーならメッセージ表示して終了
+            if result != .success {
+                let alert: UIAlertController = UIAlertController(title: "", message:  message, preferredStyle:  UIAlertController.Style.alert)
+                let okAction: UIAlertAction = UIAlertAction(title: R.string.localizable.oK(), style: UIAlertAction.Style.default)
+                alert.addAction(okAction)
+                weakSelf.present(alert, animated: true, completion: nil)
+                return
+            }
+            
             // 変換結果を入力文字一覧に追加
             weakSelf.viewModel.addInputStringListData(sourceString: weakSelf.inputStringTextView.text,
                                                       destinationString: ruby)

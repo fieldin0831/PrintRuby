@@ -41,13 +41,27 @@ class InputStringViewModel: NSObject {
     ///   - sourceString: 変換元文字列
     ///   - completion: 結果を返却クロージャ
     func convertStringToRuby(sourceString: String,
-                             completion: @escaping (_ result: Int, _ message: String, _ rubyString: String) -> Void) {
-        DispatchQueue.global().async {
-            Thread.sleep(forTimeInterval: 1.0)
-            DispatchQueue.main.async {
-                completion(1, "", sourceString)
-            }
+                             completion: @escaping (_ result: ApiGooManager.APIResultType, _ message: String, _ rubyString: String) -> Void) {
+        
+        // リクエスト作成
+        let request = ApiGooConvertToHiraganaRequest()
+        request.sentence = sourceString
+        
+        // API呼び出し
+        ApiGooManager.singleton.convertToHiragana(request: request,
+                                                  success: { (response, statusCode) in
+                                                    completion(.success, "", response.body?.converted ?? "")
+                                                    
+        }) { (result, statusCode, message) in
+            completion(result, message, "")
         }
+        
+//        DispatchQueue.global().async {
+//            Thread.sleep(forTimeInterval: 1.0)
+//            DispatchQueue.main.async {
+//                completion(1, "", sourceString)
+//            }
+//        }
     }
     
     /// 入力文字一覧データ追加

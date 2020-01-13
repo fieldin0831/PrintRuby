@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eyO-gX-QgQ">
-                                <rect key="frame" x="20" y="414" width="180.66666666666666" height="68.333333333333314"/>
+                                <rect key="frame" x="39.999999999999986" y="414" width="180.66666666666663" height="68.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q7H-vl-YOQ">
                                         <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="68.333333333333329"/>
@@ -38,7 +38,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-Mz-Cyp">
-                                        <rect key="frame" x="94.666666666666686" y="0.0" width="86" height="68.333333333333329"/>
+                                        <rect key="frame" x="94.666666666666657" y="0.0" width="86" height="68.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あーる" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKv-2e-E1Y">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="25.333333333333332"/>
@@ -60,7 +60,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eyO-gX-QgQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aOI-gC-T3M"/>
-                            <constraint firstItem="eyO-gX-QgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l2q-o8-Dka"/>
+                            <constraint firstItem="eyO-gX-QgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="l2q-o8-Dka"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
