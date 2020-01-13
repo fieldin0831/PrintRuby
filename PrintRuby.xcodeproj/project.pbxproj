@@ -179,11 +179,11 @@
 		B693ECD923C9B57D00B9B847 /* PrintRuby */ = {
 			isa = PBXGroup;
 			children = (
-				B6B7805E23CAFA850024138C /* Common */,
 				B693ED0A23C9F99900B9B847 /* ViewModel */,
 				B693ED0923C9F98F00B9B847 /* ViewController */,
 				B693ED0823C9F97F00B9B847 /* View */,
 				B61A844423CCAF6F000B90E3 /* API */,
+				B6B7805E23CAFA850024138C /* Common */,
 				B693ECDA23C9B57D00B9B847 /* AppDelegate.swift */,
 				B693ECE123C9B58500B9B847 /* Assets.xcassets */,
 				B693ECE323C9B58500B9B847 /* LaunchScreen.storyboard */,

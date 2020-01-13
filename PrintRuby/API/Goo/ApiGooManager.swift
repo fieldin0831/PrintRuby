@@ -126,6 +126,7 @@ class ApiGooManager: NSObject {
         })
     }
     
+    
     // MARK: - private function
     
     /// 接続状態確認
