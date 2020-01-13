@@ -22,6 +22,10 @@
 		B6B7806923CB18F50024138C /* ShowRubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7806823CB18F50024138C /* ShowRubyViewController.swift */; };
 		B6B7806B23CB1AB10024138C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B7806A23CB1AB10024138C /* Main.storyboard */; };
 		B6B7806D23CB4C050024138C /* InputStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7806C23CB4C050024138C /* InputStringTableViewCell.swift */; };
+		B6B7806F23CB51E30024138C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7806E23CB51E30024138C /* BaseViewController.swift */; };
+		B6B7807123CB74260024138C /* BaseViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7807023CB74260024138C /* BaseViewData.swift */; };
+		B6B7807323CB74D30024138C /* InputStringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7807223CB74D30024138C /* InputStringViewModel.swift */; };
+		B6B7807523CB74FD0024138C /* ShowRubyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B7807423CB74FD0024138C /* ShowRubyViewModel.swift */; };
 		B6F3CAD923CA14C800366A8C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F3CAD823CA14C800366A8C /* R.generated.swift */; };
 		C7712F6C287AF74783104209 /* Pods_PrintRubyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CF35D5FE8C7C093A472CBB /* Pods_PrintRubyTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,10 @@
 		B6B7806823CB18F50024138C /* ShowRubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRubyViewController.swift; sourceTree = "<group>"; };
 		B6B7806A23CB1AB10024138C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B6B7806C23CB4C050024138C /* InputStringTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStringTableViewCell.swift; sourceTree = "<group>"; };
+		B6B7806E23CB51E30024138C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B6B7807023CB74260024138C /* BaseViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewData.swift; sourceTree = "<group>"; };
+		B6B7807223CB74D30024138C /* InputStringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStringViewModel.swift; sourceTree = "<group>"; };
+		B6B7807423CB74FD0024138C /* ShowRubyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRubyViewModel.swift; sourceTree = "<group>"; };
 		B6F3CAD823CA14C800366A8C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +193,7 @@
 		B693ED0923C9F98F00B9B847 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B6B7806E23CB51E30024138C /* BaseViewController.swift */,
 				B6B7806223CAFB900024138C /* InputStringViewController.swift */,
 				B6B7806C23CB4C050024138C /* InputStringTableViewCell.swift */,
 				B6B7806823CB18F50024138C /* ShowRubyViewController.swift */,
@@ -195,6 +204,9 @@
 		B693ED0A23C9F99900B9B847 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B6B7807023CB74260024138C /* BaseViewData.swift */,
+				B6B7807223CB74D30024138C /* InputStringViewModel.swift */,
+				B6B7807423CB74FD0024138C /* ShowRubyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -489,9 +501,13 @@
 			files = (
 				B6B7806923CB18F50024138C /* ShowRubyViewController.swift in Sources */,
 				B693ECDB23C9B57D00B9B847 /* AppDelegate.swift in Sources */,
+				B6B7807323CB74D30024138C /* InputStringViewModel.swift in Sources */,
 				B6B7806723CB11590024138C /* CustomButton.swift in Sources */,
 				B6B7806D23CB4C050024138C /* InputStringTableViewCell.swift in Sources */,
 				B6B7806123CAFAD60024138C /* CustomTextView.swift in Sources */,
+				B6B7807123CB74260024138C /* BaseViewData.swift in Sources */,
+				B6B7807523CB74FD0024138C /* ShowRubyViewModel.swift in Sources */,
+				B6B7806F23CB51E30024138C /* BaseViewController.swift in Sources */,
 				B6B7806323CAFB900024138C /* InputStringViewController.swift in Sources */,
 				B6F3CAD923CA14C800366A8C /* R.generated.swift in Sources */,
 			);
