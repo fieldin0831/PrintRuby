@@ -61,7 +61,7 @@ class BaseViewController: UIViewController {
     /// - Parameters:
     ///   - safeAreaView: 設定元View
     func setKeyboardSafeAreaWithView(_ safeAreaView: UIView) {
-        keyboardSafeArea = safeAreaView.convert(safeAreaView.frame, to: self.view)
+        keyboardSafeArea = safeAreaView.convert(safeAreaView.bounds, to: self.view)
     }
     
     /// Viewデータ設定

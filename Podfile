@@ -9,7 +9,8 @@ target 'PrintRuby' do
   pod 'Alamofire'
   pod 'ReachabilitySwift'
   pod 'R.swift'
-
+  pod 'SVProgressHUD'
+  
   target 'PrintRubyTests' do
     inherit! :search_paths
     # Pods for testing

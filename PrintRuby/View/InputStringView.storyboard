@@ -21,17 +21,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LzJ-sy-63w">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="605.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InputStringTableViewCell" id="cqP-Nh-a8J" customClass="InputStringTableViewCell" customModule="PrintRuby" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InputStringTableViewCell" rowHeight="44" id="cqP-Nh-a8J" customClass="InputStringTableViewCell" customModule="PrintRuby" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cqP-Nh-a8J" id="gD3-XZ-cuH">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-WO-es4">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-WO-es4">
                                                             <rect key="frame" x="10" y="10.000000000000002" width="355" height="23.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -46,29 +46,32 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="wordLabel" destination="jkm-WO-es4" id="GEJ-en-8i6"/>
+                                                    <outlet property="stringLabel" destination="jkm-WO-es4" id="KvY-YD-jUz"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXn-HX-XQg">
-                                        <rect key="frame" x="0.0" y="605.66666666666663" width="375" height="84.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="540" width="375" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-aw-dv0">
-                                                <rect key="frame" x="10" y="10" width="355" height="64.333333333333329"/>
+                                                <rect key="frame" x="10" y="10" width="355" height="130"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ONy-jh-mjX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="298" height="64.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="8.6666666666666217" width="298" height="121.33333333333331"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="967-ib-zH7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="298" height="7"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="298" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-3y-wvf" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="12" width="298" height="33"/>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-3y-wvf" customClass="CustomTextView" customModule="PrintRuby" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="22" width="298" height="80"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="uG2-3D-cyq"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -81,10 +84,13 @@
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                         <real key="value" value="8"/>
                                                                     </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumNumberOfLines">
+                                                                        <integer key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzZ-ZJ-zfn">
-                                                                <rect key="frame" x="0.0" y="50" width="298" height="14.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="107" width="298" height="14.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -92,8 +98,8 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpj-nx-Shy" customClass="CustomButton" customModule="PrintRuby" customModuleProvider="target">
-                                                        <rect key="frame" x="305" y="0.0" width="50" height="64.333333333333329"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="305" y="0.0" width="50" height="130"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="hIM-Tm-V9J"/>
                                                         </constraints>
@@ -107,7 +113,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <segue destination="YsI-x5-tCI" kind="show" id="2zw-ur-uNZ"/>
+                                                            <action selector="touchUpInsideConvertStringButton:" destination="ZVX-YJ-1AE" eventType="touchUpInside" id="T3j-zE-egy"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -137,26 +143,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DxG-y2-rF5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Print Ruby" id="o7D-Hb-jZX"/>
+                    <navigationItem key="navigationItem" title="Print Ruby" id="o7D-Hb-jZX">
+                        <barButtonItem key="backBarButtonItem" title=" " id="eR5-yb-FYJ"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="convertWordButton" destination="wpj-nx-Shy" id="rAt-Md-U1N"/>
-                        <outlet property="inputWordTextView" destination="ffl-3y-wvf" id="sI8-hY-JHl"/>
-                        <outlet property="wordCountLabel" destination="qzZ-ZJ-zfn" id="gz6-k5-UUg"/>
-                        <outlet property="wordTableView" destination="LzJ-sy-63w" id="1d4-vC-sK5"/>
+                        <outlet property="convertStringButton" destination="wpj-nx-Shy" id="xBN-Pv-QVz"/>
+                        <outlet property="inputAreaView" destination="RXn-HX-XQg" id="UX5-B8-Sw2"/>
+                        <outlet property="inputStringTextView" destination="ffl-3y-wvf" id="VR6-r7-YjR"/>
+                        <outlet property="stringCountLabel" destination="qzZ-ZJ-zfn" id="Sub-Zi-xln"/>
+                        <outlet property="stringTableView" destination="LzJ-sy-63w" id="2Ff-0q-b7v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17M-SI-Bu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="258" y="173"/>
-        </scene>
-        <!--ShowRubyView-->
-        <scene sceneID="3uq-Ei-xAc">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ShowRubyView" id="YsI-x5-tCI" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z5V-An-CmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="815" y="173"/>
         </scene>
     </scenes>
 </document>
